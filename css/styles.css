@@ -453,6 +453,12 @@ text-align: right;
 font-weight: 600;
 padding-right: 0px;
 }
+/*Skills*/
+.projecttitle {
+text-align: left;
+font-weight: 600;
+padding-right: 0px;
+}
 .progress {
 border-radius: 0px;
 height: 15px;
