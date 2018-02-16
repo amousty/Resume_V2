@@ -1,4 +1,5 @@
 $('document').ready(function () {
     customScripts.init();
-    CUSTOM.setResumeVersion();
+    HELPER.setResumeVersion('currentResumeVersion', 5);
+    GITHUB.getAPIResult();
 });

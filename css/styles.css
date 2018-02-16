@@ -147,7 +147,7 @@ margin: 0;
 background: transparent !important;
 }
     .navbar-inverse .navbar-toggle .icon-bar {
-        /*background-color: #CC4646;*/;
+        background-color: #CC4646;
     }
 
     .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
@@ -421,7 +421,6 @@ background:#fff;
 #aboutUs .txtHead{
 background:#fff;
 padding:20px 10px;
-margin-top: 20px;
 }
 #aboutUs .txtHead .fa {
 font-size: 58px;
@@ -450,12 +449,6 @@ color: #FDFDFD !important;
 /*Skills*/
 .skilltitle {
 text-align: right;
-font-weight: 600;
-padding-right: 0px;
-}
-/*Skills*/
-.projecttitle {
-text-align: left;
 font-weight: 600;
 padding-right: 0px;
 }
@@ -568,9 +561,7 @@ display: inherit;
   padding: 0;
   margin: 0;
 }
-/*#timeline .timeline-movement .timeline-item .timeline-panel.credits .timeline-panel-ul {
-  text-align: right;
-}*/
+
 #timeline .timeline-movement .timeline-item .timeline-panel.credits .timeline-panel-ul li {
   color: #666;
 }
@@ -1146,3 +1137,14 @@ footer {
         user-select: none;
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     }
+
+/*Skills*/
+.projecttitle {
+  text-align: left;
+  font-weight: 600;
+  padding-right: 0px;
+}
+
+#projects{
+  margin-top: 15px;
+}
