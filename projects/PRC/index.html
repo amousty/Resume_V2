@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- icon -->
+        <link rel='shortcut icon' type='image/x-icon' href='img/favicon.ico' />
+
+        <!-- CSS inserts -->
+        <!-- Libraries -->
+        <link type="text/css" rel="stylesheet"  href="css/bootstrap/bootstrap.min.css">
+        <link type="text/css" rel="stylesheet"  href="css/font-awesome/font-awesome.css">
+        <link type="text/css" rel="stylesheet"  href="css/datatables/datatables.css">
+
+        <!-- Custom CSS -->
+        <link type="text/css" rel="stylesheet"  href="css/default.css">
+        <link type="text/css" rel="stylesheet"  href="css/spinner.css">
+
+        <!-- Javascript inserts -->
+        <!-- Libraries -->
+        <script type="text/javascript" src="js/jquery/jquery-3.2.1.min.js"></script>
+        <!-- https://github.com/FezVrasta/popper.js/blob/master/docs/_includes/popper-documentation.md -->
+        <script type="text/javascript" src="js/bootstrap/bootstrap.bundle.min.js"></script>
+        <!-- https://datatables.net -->
+        <script type="text/javascript" src="js/datatables/datatables.min.js"></script>
+        <script type="text/javascript" src="js/chart/Chart.min.js"></script>
+
+        <!-- Custom JS -->
+        <script type="text/javascript" src="js/custom-min/helper.min.js"></script>
+        <script type="text/javascript" src="js/custom-min/reporting-graph.min.js"></script>
+        <script type="text/javascript" src="js/custom-min/datatable.min.js"></script>
+        <script type="text/javascript" src="js/start.js"></script>
+
+        <meta charset="utf-8" />
+        <title>Risk Viewer</title>
+    </head>
+    <body>
+      <div id="loader"></div>
+
+      <!-- HEADER -->
+      <nav class="">
+        <ul>
+          <li>
+            <a
+              target="_blank"
+              href="doc/user-manual.pdf"
+              data-toggle="tooltip"
+              data-placement="left"
+              title="User manual"
+            >
+            <!--DOCUMENTATION-->
+            <i class="fa fa-file-text fa-2x" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://github.com/amousty/Patient_Risk_Comparison"
+              data-toggle="tooltip"
+              data-placement="bottom"
+              title="Source code"
+            >
+            <!--SOURCE-->
+            <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              class="smooth-scrolling"
+              href="#tblData"
+              data-toggle="tooltip"
+              data-placement="bottom"
+              title="Go to dataset"
+            >
+              <!--DATASET-->
+              <i class="fa fa-list fa-2x" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              class="smooth-scrolling"
+              href="#graph-container"
+              data-toggle="tooltip"
+              data-placement="bottom"
+              title="Go to chart (if selected patient)"
+            >
+              <!--CHART-->
+              <i class="fa fa-bar-chart fa-2x" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <header>
+        <div class="headline" style="opacity: 1;">
+          <div class="inner">
+            <h1 style="transform: translateY(0px);">Patient comparison</h1>
+            <p style="transform: translateY(0px);">View & compare your patient data very easily</p>
+          </div>
+        </div>
+      </header>
+      <!-- END HEADER -->
+
+      <!-- DATA ZONE -->
+      <div class="col-lg-10 offset-lg-1" id="data-container">
+        <table id="tblData" class="table-hover display">
+            <thead class="thead-inverse">
+              <tr>
+                <th class='text-center'>First Name</th>
+                <th class='text-center'>Last Name</th>
+                <th class='text-center'>Birthdate</th>
+                <th class='text-center'>Gender</th>
+                <th class='text-center'>BMI</th>
+                <th class='text-center'>HbA1c</th>
+                <th class='text-center'>Chol. Tot.</th>
+                <th class='text-center'>Chol. HDL</th>
+                <th class='text-center'>PSS</th>
+                <th class='text-center'>Cig./year</th>
+              </tr>
+            </thead>
+            <tfoot>
+  						<tr>
+                <th class='text-center'>First Name</th>
+                <th class='text-center'>Last Name</th>
+                <th class='text-center'>Birthdate</th>
+                <th class='text-center'>Gender</th>
+                <th class='text-center'>BMI</th>
+                <th class='text-center'>HbA1c</th>
+                <th class='text-center'>Chol. Tot.</th>
+                <th class='text-center'>Chol. HDL</th>
+                <th class='text-center'>PSS</th>
+                <th class='text-center'>Cig./year</th>
+  						</tr>
+  					</tfoot>
+            <tbody id="tbodyData">
+
+            </tbody>
+          </table>
+
+          <!-- CHART ZONE -->
+          <div id="graph-container">
+              <canvas id="results-graph">
+                <!-- CHART GENERATION -->
+              </canvas>
+          </div>
+        </div> <!--End data-container -->
+        <!-- END DATA ZONE -->
+
+        <!-- MODAL ZONE -->
+
+
+        <div class="modal fade" id="alertModal" tabindex="-1" role="dialog" aria-labelledby="alertModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="alertModalLabel">Warning <i class="fa fa-exclamation-circle" aria-hidden="true"></i></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="DT.redrawChart();">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body" id="alertModalContent">
+                You can only select <span>4</span> patients at the same time. </br>
+                Please, unselect patient(s).</br> </br>
+                <div id="modalPatientList">
+                  <!-- Loaded dynamically by getListOfSelectPatient (datatable.js) -->
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-info" data-dismiss="modal" id="btn-rmv-patient">Remove selection</button>
+                <button type="button" class="btn btn-info" data-dismiss="modal" onclick="DT.redrawChart();">Get it</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- END MODAL ZONE -->
+    </body>
+</html>
