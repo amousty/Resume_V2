@@ -135,22 +135,6 @@ var HELPER = (function() {
         $("#" + el).attr("href", "doc/MOUSTY_Adrien_CV_" + CVN + "_EN.pdf");
       },
 
-      /*
-       NAME : requestJSON
-       ROLE : JSON AJAX request
-       PARAM :
-         - url : URL to call
-         - callback : Ccallback
-       RETURN : /
-     */
-     requestJSON : function(url, callback) {
-        $.ajax({
-          url: url,
-          complete: function(xhr) {
-            callback.call(null, xhr.responseJSON);
-          }
-        });
-      }
     };
 
 })();
