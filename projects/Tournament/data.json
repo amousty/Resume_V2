@@ -1,0 +1,82 @@
+{
+	"players": [
+		{"name" : "Adrien",		"team" : "", "points" : 0},
+		{"name" : "Naomi",		"team" : "", "points" : 0},
+		{"name" : "Antoine",	"team" : "", "points" : 4},
+		{"name" : "Adeline",	"team" : "", "points" : 0},
+		{"name" : "Thomas",		"team" : "", "points" : 0},
+		{"name" : "Virginie",	"team" : "", "points" : 0},
+		{"name" : "Julien",		"team" : "", "points" : 5}
+	],
+	"maps": [
+		"Glacon",
+		"Cimetiere",
+		"Bonta II",
+		"Mine Deurien",
+		"Plantation"
+	],
+	"teams" : [
+		{"id" : 1, "composition" : [
+			{"name" : "Gein"},
+			{"name" : "Khan K."},
+			{"name" : "Dragon C."},
+			{"name" : "Milimilou"}
+			]
+		},
+		{"id" : 2, "composition" : [
+			{"name" : "Katar"},
+			{"name" : "Mil Kluvah"},
+			{"name" : "Laika N."},
+			{"name" : "Lilotte"}
+			]
+		},
+		{"id" : 3, "composition" : [
+			{"name" : "Roi Menthe"},
+			{"name" : "Raymond G."},
+			{"name" : "Kitty R."},
+			{"name" : "Kivin"}
+			]
+		},
+		{"id" : 4, "composition" : [
+			{"name" : "Gourgal."},
+			{"name" : "Maître C."},
+			{"name" : "Chabal O."},
+			{"name" : "Chafer L."},
+			{"name" : "Kro Dur L.B."}
+			]
+		},
+		{"id" : 5, "composition" : [
+			{"name" : "Hercule"},
+			{"name" : "Roi Framb."},
+			{"name" : "Wally F."},
+			{"name" : "Moe L."},
+			{"name" : "Lou."},
+			{"name" : "Percimol."}
+			]
+		},
+		{"id" : 6, "composition" : [
+			{"name" : "Persée F."},
+			{"name" : "Khan K."},
+			{"name" : "Groarg G"},
+			{"name" : "Steevie O."},
+			{"name" : "Phaeris."},
+			{"name" : "Djaul"},
+			{"name" : "Joris B."}
+			]
+		},
+		{"id" : 7, "composition" : [
+			{"name" : "Raoul B."},
+			{"name" : "Marty Ni"},
+			{"name" : "Sphincter C."},
+			{"name" : "Archer B."},
+			{"name" : "Jerry O."}
+			]
+		},
+		{"id" : 8, "composition" : [
+			{"name" : "Grougal."},
+			{"name" : "Vampyro"},
+			{"name" : "Bakara"}
+			]
+		}
+	]
+}
