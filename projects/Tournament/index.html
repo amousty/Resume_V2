@@ -3,9 +3,9 @@
 
 <head>
     <meta charset="utf-8">
-    <title></title>
-    <meta name="author" content="">
-    <meta name="description" content="">
+    <title>Classement</title>
+    <meta name="author" content="Adrien">
+    <meta name="description" content="Krosmaster classification">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Latest compiled and minified CSS -->
@@ -19,33 +19,17 @@
 <body>
     <div id="wrapper">
 
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand">
-                    <a href="#">
-                        Menu
-                    </a>
-                </li>
-                <li>
-                    <a href="index.html">Classement</a>
-                </li>
-                <li>
-                    <a href="tournamentGenerator.html">Générer tournoi</a>
-                </li>
-                <li>
-                    <a href="#">DONNER UN MAX DE FRIC</a>
-                </li>
-            </ul>
-        </div>
-        <!-- /#sidebar-wrapper -->
+      <!-- Navbar -->
+      <div w3-include-html="navbar.html"></div>
+
         <!-- Page Content -->
         <div id="page-content-wrapper">
             <div class="container-fluid">
-                <h1><i class="fas fa-angle-left" href="#menu-toggle" id="menu-toggle"></i> Classement</h1>
+                <h1  class="krosColour"><i class="fas fa-angle-left" href="#menu-toggle" id="menu-toggle"></i> Classement</h1>
                 <table id="playersTable" class="table">
                     <thead  class="thead-dark">
                         <tr>
+                            <th>Classement</th>
                             <th>Nom de joueur</th>
                             <th>Equipe</th>
                             <th>Points</th>

@@ -120,3 +120,19 @@ body {
     margin-right: 0;
   }
 }
+/* USed in table accordion*/
+.hiddenRow {
+    padding: 0 !important;
+}
+
+.list-group-item{
+  border : inherit !important;
+}
+
+.badge-primary{
+  background-color: #FCDD00 !important;
+}
+
+.krosColour, .boss {
+  color : #FCDD00 !important;
+}

@@ -1,10 +1,10 @@
-var players = [];
-var maps = [];
+
 
 $(document).ready(function(){
 	generateTournamentData();
 	//alert(players[0]);
   intitalizeEvent();
+	includeHTML();
 });
 
 function generateTournamentData(){
@@ -15,6 +15,7 @@ function generateTournamentData(){
 		success : function(result) {
 			players = result.players;
       maps = result.maps;
+			teams = result.teams;
 			// Class by point
 			sortResults(players, "points", false);
 
@@ -45,8 +46,8 @@ function buildTournamentTable(players, maps){
 				var tr = $('<tr>');
         tr.append($('<td>').text(id));
         tr.append($('<td>').text(map));
-				tr.append($('<td>').text(j1));
-				tr.append($('<td>').text(j2));
+				tr.append('<td>' + j1 + '</td>');
+				tr.append('<td>' + j2 + '</td>');
 				$('#tournamentGeneration').append(tr);
 	}
 }
