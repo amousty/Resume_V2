@@ -47,7 +47,13 @@ function  pickAValue(arrValue, type, random){
         pickedMaps.push(arrValue[randomIndex]);
       }
       else if(type === "P"){
-        returnValue = "<span class='badge badge-danger badge-pill'>" +  calculateInitiative(arrValue[randomIndex].team - 1)  +"</span> " + arrValue[randomIndex].name;
+        returnValue += "<span class='badge badge-secondary badge-pill'>";
+        returnValue += "<i class='fas fa-sort-numeric-up'></i> " + 	arrValue[randomIndex].points;
+        returnValue += "</span> ";
+        returnValue += "<span class='badge badge-primary badge-pill'>";
+        returnValue += "<i class='fas fa-bolt'></i> " +  calculateInitiative(arrValue[randomIndex].team - 1);
+        returnValue += "</span> ";
+        returnValue += arrValue[randomIndex].name;
         pickedPlayers.push(arrValue[randomIndex]);
       }
       else if(type === "T"){

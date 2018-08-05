@@ -35,7 +35,6 @@ function buildTournamentTable(players, maps){
         var j1 = pickAValue(players, "P", false);
 				var j2 	= pickAValue(players, "P", false);
 
-
         // BYE CHECK
         if(j2 === ""){
           map = "BYE";
@@ -44,7 +43,7 @@ function buildTournamentTable(players, maps){
         }
 
 				var tr = $('<tr>');
-        tr.append($('<td>').text(id));
+        tr.append('<td>' + id + '</td>');
         tr.append($('<td>').text(map));
 				tr.append('<td>' + j1 + '</td>');
 				tr.append('<td>' + j2 + '</td>');

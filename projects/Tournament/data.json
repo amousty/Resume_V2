@@ -17,66 +17,66 @@
 	],
 	"teams" : [
 		{"id" : 1, "name" : "Milimochon", "composition" : [
-			{"name" : "Gein"				, "init" : 12, "level" : 0, "hp" : 0, "type" : "boss"},
-			{"name" : "Khan K."			, "init" : 6, "level" : 0, "hp" : 0, "type" : "normal"},
-			{"name" : "Dragon C."		, "init" : 5, "level" : 0, "hp" : 0, "type" : "normal"},
-			{"name" : "Milimilou"		, "init" : 3, "level" : 0, "hp" : 0, "type" : "normal"}
+			{"name" : "Gein"								, "init" : 12, "level" : 6, "hp" : 0, "type" : "boss"},
+			{"name" : "Khan Karkass"				, "init" : 6, "level" : 2, "hp" : 0, "type" : "normal"},
+			{"name" : "Dragon Cochon"				, "init" : 5, "level" : 3, "hp" : 0, "type" : "normal"},
+			{"name" : "Milimilou"						, "init" : 3, "level" : 1, "hp" : 0, "type" : "normal"}
 			]
 		},
 		{"id" : 2, "name" : "Katin", "composition" : [
-			{"name" : "Katar"				, "init" : 9, "level" : 0, "hp" : 0, "type" : "normal"},
-			{"name" : "Mil Kluvah"	, "init" : 7, "level" : 0, "hp" : 0, "type" : "normal"},
-			{"name" : "Laika N."		, "init" : 3, "level" : 0, "hp" : 0, "type" : "normal"},
-			{"name" : "Lilotte"			, "init" : 2, "level" : 0, "hp" : 0, "type" : "normal"}
+			{"name" : "Katar"								, "init" : 9, "level" : 6, "hp" : 0, "type" : "normal"},
+			{"name" : "Mil Kluvah"					, "init" : 7, "level" : 3, "hp" : 0, "type" : "normal"},
+			{"name" : "Laika Niche"					, "init" : 3, "level" : 1, "hp" : 0, "type" : "normal"},
+			{"name" : "Lilotte"							, "init" : 2, "level" : 2, "hp" : 0, "type" : "normal"}
 			]
 		},
 		{"id" : 3, "name" : "Obalmaské", "composition" : [
-			{"name" : "Roi Menthe"	, "init" : 9, "level" : 0, "hp" : 0, "type" : "normal"},
-			{"name" : "Raymond G."	, "init" : 5, "level" : 0, "hp" : 0, "type" : "normal"},
-			{"name" : "Kitty R."		, "init" : 5, "level" : 0, "hp" : 0, "type" : "boss"},
-			{"name" : "Maskemane"		, "init" : 2, "level" : 0, "hp" : 0, "type" : "normal"},
-			{"name" : "Kivin"				, "init" : 0, "level" : 0, "hp" : 0, "type" : "normal"}
+			{"name" : "Roi Menthe"					, "init" : 9, "level" : 3, "hp" : 0, "type" : "normal"},
+			{"name" : "Raymond Garden"			, "init" : 5, "level" : 2, "hp" : 0, "type" : "normal"},
+			{"name" : "Kitty Rage"					, "init" : 5, "level" : 5, "hp" : 0, "type" : "boss"},
+			{"name" : "Maskemane"						, "init" : 2, "level" : 1, "hp" : 0, "type" : "normal"},
+			{"name" : "Kivin"								, "init" : 0, "level" : 1, "hp" : 0, "type" : "normal"}
 			]
 		},
 		{"id" : 4, "name" : "Corbowl", "composition" : [
-			{"name" : "Gourgal."		, "init" : 9, "level" : 0, "hp" : 0, "type" : "boss"},
-			{"name" : "Maître C."		, "init" : 7, "level" : 0, "hp" : 0, "type" : "normal"},
-			{"name" : "Chabal O."		, "init" : 7, "level" : 0, "hp" : 0, "type" : "normal"},
-			{"name" : "Chafer L."		, "init" : 3, "level" : 0, "hp" : 0, "type" : "normal"},
-			{"name" : "Kro Dur L.B.", "init" : 2, "level" : 0, "hp" : 0, "type" : "normal"}
+			{"name" : "Gourgaloragram"			, "init" : 9, "level" : 3, "hp" : 0, "type" : "boss"},
+			{"name" : "Maître Corbac"				, "init" : 7, "level" : 3, "hp" : 0, "type" : "normal"},
+			{"name" : "Chabal Ocentre"			, "init" : 7, "level" : 4, "hp" : 0, "type" : "normal"},
+			{"name" : "Chafer Lancier"			, "init" : 3, "level" : 1, "hp" : 0, "type" : "normal"},
+			{"name" : "Kro Dur Le Blanc"		, "init" : 2, "level" : 1, "hp" : 0, "type" : "normal"}
 			]
 		},
 		{"id" : 5, "name" : "Francule", "composition" : [
-			{"name" : "Hercule"			, "init" : 8, "level" : 0, "hp" : 0, "type" : "boss"},
-			{"name" : "Roi Framb."	, "init" : 5, "level" : 0, "hp" : 0, "type" : "normal"},
-			{"name" : "Wally F."		, "init" : 4, "level" : 0, "hp" : 0, "type" : "normal"},
-			{"name" : "Moe L."			, "init" : 3, "level" : 0, "hp" : 0, "type" : "normal"},
-			{"name" : "Lou."				, "init" : 2, "level" : 0, "hp" : 0, "type" : "normal"},
-			{"name" : "Percimol."		, "init" : 2, "level" : 0, "hp" : 0, "type" : "normal"}
+			{"name" : "Hercule"							, "init" : 8, "level" : 4, "hp" : 11, "type" : "boss"},
+			{"name" : "Roi Framboise"				, "init" : 5, "level" : 1, "hp" : 5, "type" : "normal"},
+			{"name" : "Wally Failleur"			, "init" : 4, "level" : 1, "hp" : 6, "type" : "normal"},
+			{"name" : "Moe Lard"						, "init" : 3, "level" : 1, "hp" : 5, "type" : "normal"},
+			{"name" : "Lou"									, "init" : 2, "level" : 2, "hp" : 5, "type" : "normal"},
+			{"name" : "Percimol Contrôlé"		, "init" : 2, "level" : 3, "hp" : 11, "type" : "normal"}
 			]
 		},
 		{"id" : 6, "name" : "Khan karspam", "composition" : [
-			{"name" : "Persée F."		, "init" : 7, "level" : 0, "hp" : 0, "type" : "normal"},
-			{"name" : "Khan K."			, "init" : 6, "level" : 0, "hp" : 0, "type" : "normal"},
-			{"name" : "Groarg G"		, "init" : 6, "level" : 0, "hp" : 0, "type" : "normal"},
-			{"name" : "Steevie O."	, "init" : 6, "level" : 0, "hp" : 0, "type" : "normal"},
-			{"name" : "Phaeris."		, "init" : 5, "level" : 0, "hp" : 0, "type" : "normal"},
-			{"name" : "Djaul"				, "init" : 4, "level" : 0, "hp" : 0, "type" : "boss"},
-			{"name" : "Joris B."		, "init" : 4, "level" : 0, "hp" : 0, "type" : "normal"}
+			{"name" : "Persée Fore"				, "init" : 7, "level" : 2, "hp" : 0, "type" : "normal"},
+			{"name" : "Khan Karkass"			, "init" : 6, "level" : 2, "hp" : 0, "type" : "normal"},
+			{"name" : "Groarg Gamel"			, "init" : 6, "level" : 1, "hp" : 0, "type" : "normal"},
+			{"name" : "Steevie Olens"			, "init" : 6, "level" : 2, "hp" : 0, "type" : "normal"},
+			{"name" : "Phaeris"						, "init" : 5, "level" : 1, "hp" : 0, "type" : "normal"},
+			{"name" : "Djaul"							, "init" : 4, "level" : 1, "hp" : 0, "type" : "boss"},
+			{"name" : "Joris Bretteur"		, "init" : 4, "level" : 3, "hp" : 0, "type" : "normal"}
 			]
 		},
 		{"id" : 7, "name" : "Shpincter back", "composition" : [
-			{"name" : "Raoul B."		, "init" : 8, "level" : 0, "hp" : 0, "type" : "normal"},
-			{"name" : "Marty Ni"		, "init" : 6, "level" : 0, "hp" : 0, "type" : "normal"},
-			{"name" : "Sphincter C.", "init" : 6, "level" : 0, "hp" : 0, "type" : "normal"},
-			{"name" : "Archer B."		, "init" : 4, "level" : 0, "hp" : 0, "type" : "normal"},
-			{"name" : "Jerry O."		, "init" : 2, "level" : 0, "hp" : 0, "type" : "normal"}
+			{"name" : "Raoul back"				, "init" : 8, "level" : 3, "hp" : 0, "type" : "normal"},
+			{"name" : "Marty Ni"					, "init" : 6, "level" : 3, "hp" : 0, "type" : "normal"},
+			{"name" : "Sphincter Cell"		, "init" : 6, "level" : 4, "hp" : 0, "type" : "normal"},
+			{"name" : "Archer Bwork"			, "init" : 4, "level" : 1, "hp" : 0, "type" : "normal"},
+			{"name" : "Jerry Orlo"				, "init" : 2, "level" : 1, "hp" : 0, "type" : "normal"}
 			]
 		},
 		{"id" : 8, "name" : "Goulag", "composition" : [
-			{"name" : "Grougal."		, "init" : 9, "level" : 0, "hp" : 0, "type" : "boss"},
-			{"name" : "Vampyro"			, "init" : 8, "level" : 0, "hp" : 0, "type" : "normal"},
-			{"name" : "Bakara"			, "init" : 7, "level" : 0, "hp" : 0, "type" : "normal"}
+			{"name" : "Grougaloragram"		, "init" : 9, "level" : 3, "hp" : 0, "type" : "boss"},
+			{"name" : "Vampyro"						, "init" : 8, "level" : 5, "hp" : 0, "type" : "normal"},
+			{"name" : "Bakara"						, "init" : 7, "level" : 4, "hp" : 0, "type" : "normal"}
 			]
 		}
 	]
