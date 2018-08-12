@@ -6,78 +6,14 @@ $(document).ready(function(){
 			includeHTML();
 			intitalizeEvent();
 	}
-	loadDashboardData();
+	loadPlayers();
 });
 
 
-function loadDashboardData(){
+function loadPlayers(){
 			// Class by point
-			//sortResults(players, "points", false);
-			//buildPlayersTable();
-			$('#totPlayer').text(players.length);
-			$('#matchCount').text(Math.floor(players.length/2));
-			var s2Tot = 0;
-			var s3Tot = 0;
-			var s4Tot = 0;
-			var s5Tot = 0;
-			var s2 = 0;
-			var s3 = 0;
-			var s4 = 0;
-			var s5 = 0;
-			for(var i = 0; i < characters.length; i++){
-				switch(characters[i].season){
-					case 2 :
-					 	s2Tot++;
-						break;
-					case 3 :
-						s3Tot++;
-						break;
-					case 4 :
-						s4Tot++;
-						break;
-					case 5 :
-						s5Tot++;
-						break;
-				}
-			}
-			for(var i = 0; i < teams.length; i++){
-				for(var j = 0; j < teams[i].composition.length; j++){
-					for(var k = 0; k < characters.length; k++){
-						if(characters[k].id === teams[i].composition[j].id){
-							switch(characters[k].season){
-								case 2 :
-								 	s2++;
-									break;
-								case 3 :
-									s3++;
-									break;
-								case 4 :
-									s4++;
-									break;
-								case 5 :
-									s5++;
-									break;
-							}
-							break;
-						}
-					}
-
-				}
-			}
-			$('#s2Tot').text(s2Tot);
-			$('#s3Tot').text(s3Tot);
-			$('#s4Tot').text(s4Tot);
-			$('#s5Tot').text(s5Tot);
-			$('#s2Count').text(s2);
-			$('#s3Count').text(s3);
-			$('#s4Count').text(s4);
-			$('#s5Count').text(s5);
-
-			var charTot = s2Tot + s3Tot + s4Tot + s5Tot;
-			var charCount = s2 + s3 + s4 + s5;
-			$('#charCount').text(charCount);
-			$('#charTot').text(charTot);
-
+			sortResults(players, "points", false);
+			buildPlayersTable();
 }
 
 function buildPlayersTable(){
@@ -109,8 +45,8 @@ function buildPlayersTable(){
         tr.append($('<td>').text(name));
         tr.append($('<td>').text(teams[teamNumber-1].name + " (" + teamNumber + ")")); // Append the tooltip
 				tr.append($('<td>').text(points));
-				$('#playersTable').append(tr);
-				$('#playersTable').append(generateTeamTable(i+1, teamNumber, teams));
+				$('#playersTableTBody').append(tr);
+				$('#playersTableTBody').append(generateTeamTable(i+1, teamNumber, teams));
 	}
 }
 

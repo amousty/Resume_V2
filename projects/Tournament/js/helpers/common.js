@@ -5,6 +5,28 @@ var pickedTeams = [];
 var players = [];
 var maps = [];
 var teams = []
+var characters = [];
+var urlData = 'data.json';
+
+function initGlobalVariables(){
+  	$.ajax({
+  		type: 'POST',
+  		url: urlData,
+  		dataType: 'json',
+      async:false,
+  		success : function(result) {
+  			players = result.players;
+        maps = result.maps;
+  			teams = result.teams;
+  			characters = result.characters;
+  		},
+      error : function (jqXHR, textStatus, errorThrown){
+        console.log("error " + textStatus);
+  			console.log("incoming Text " + jqXHR.responseText);
+      }
+  	});
+}
+
 function intitalizeEvent(){
   $("#menu-toggle").click(function (e) {
       e.preventDefault();
@@ -51,7 +73,7 @@ function  pickAValue(arrValue, type, random){
         returnValue += "<i class='fas fa-sort-numeric-up'></i> " + 	arrValue[randomIndex].points;
         returnValue += "</span> ";
         returnValue += "<span class='badge badge-primary badge-pill'>";
-        returnValue += "<i class='fas fa-bolt'></i> " +  calculateInitiative(arrValue[randomIndex].team - 1);
+        returnValue += "<i class='fas fa-bolt'></i> " +  calculateTeamValue(arrValue[randomIndex].team - 1, "INIT");
         returnValue += "</span> ";
         returnValue += arrValue[randomIndex].name;
         pickedPlayers.push(arrValue[randomIndex]);
@@ -67,15 +89,39 @@ function  pickAValue(arrValue, type, random){
     return returnValue;
 }
 
-function calculateInitiative(teamID){
-	var init = 0;
+function calculateTeamValue(teamID, type){
+	var finalVal = 0;
   if(typeof teams[teamID] !== "undefined" && teams[teamID].composition.length > 0){
     for(var i = 0; i < teams[teamID].composition.length; i++){
-  		init += parseInt(teams[teamID].composition[i].init);
+      switch(type){
+        case "HP" :
+        case "AVGHP" :
+          finalVal += parseInt(characters[teams[teamID].composition[i].id].hp);
+          break;
+        case "PA" :
+        case "AVGPA" :
+          finalVal += parseInt(characters[teams[teamID].composition[i].id].pa);
+          break;
+        case "PM" :
+        case "AVGPM" :
+          finalVal += parseInt(characters[teams[teamID].composition[i].id].pm);
+          break;
+        case "INIT" :
+        default :
+          finalVal += parseInt(characters[teams[teamID].composition[i].id].init);
+          break;
+      }
+
   	}
   }
-	return init;
+  if(type.includes("AVG")){
+    finalVal /= teams[teamID].composition.length;
+    //parseFloat(finalVal).toFixed(2);
+    finalVal = finalVal.toFixed(2);
+  }
+	return finalVal;
 }
+
 
 function includeHTML() {
   var z, i, elmnt, file, xhttp;

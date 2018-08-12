@@ -31,18 +31,22 @@
                <!-- top tiles -->
                <div class="row tile_count">
                   <div class="container-fluid">
-                <h1 class="krosColour"><i class="fas fa-angle-left" href="#menu-toggle" id="menu-toggle"></i> Générateur de matchs</h1>
-                <table id="tournamentGeneration" class="table table-hover">
-                    <thead  class="thead-dark">
+                <h1  class="krosColour"><i class="fas fa-angle-left" href="#menu-toggle" id="menu-toggle"></i> Liste des figurines dispo</h1>
+                <table id="characterTable" class="table table-hover">
+                    <thead>
                         <tr>
-                            <th>Table</th>
-                            <th>Map</th>
-                            <th>J1</th>
-                            <th>J2</th>
+                            <th>#</th>
+                            <th>Nom</th>
+                            <th>Type</th>
+                            <th>Niveau</th>
+                            <th>Initiative</th>
+                            <th>Vie</th>
+                            <th>PA</th>
+                            <th>PM</th>
                         </tr>
                     </thead>
-                    <tbody id="tournamentGenerationTBody">
-                      <!-- Dynamically filled -->
+                    <tbody id="characterTableTBody">
+                      <!-- Dynamicly filled -->
                     </tbody>
                 </table>
               </div>
@@ -63,6 +67,6 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
   <!--<script src="js/helpers/smartresize.js"></script>-->
   <script src="js/helpers/common.js"></script>
-  <script src="js/generator.js"></script>
+  <script src="js/character.js"></script>
   </body>
   </html>

@@ -1,57 +1,156 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
-    <title>Classement</title>
-    <meta name="author" content="Adrien">
-    <meta name="description" content="Krosmaster classification">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- Fontawesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-
-    <link href="css/style.css" rel="stylesheet">
-</head>
-
-<body>
-    <div id="wrapper">
-
-      <!-- Navbar -->
-      <div w3-include-html="navbar.html"></div>
-
-        <!-- Page Content -->
-        <div id="page-content-wrapper">
-            <div class="container-fluid">
-                <h1  class="krosColour"><i class="fas fa-angle-left" href="#menu-toggle" id="menu-toggle"></i> Classement</h1>
-                <table id="playersTable" class="table">
-                    <thead  class="thead-dark">
-                        <tr>
-                            <th>Classement</th>
-                            <th>Nom de joueur</th>
-                            <th>Equipe</th>
-                            <th>Points</th>
-                        </tr>
-                    </thead>
-                </table>
+   <head>
+      <meta charset="utf-8">
+      <title>Dashboard</title>
+      <meta name="author" content="Adrien">
+      <meta name="description" content="Krosmaster classification">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- Fontawesome -->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="css/custom.css">
+   </head>
+   <body class="nav-md">
+      <div class="container body">
+         <div class="main_container">
+            <!-- Navbar -->
+            <div w3-include-html="shared/navbar.html"></div>
+            <!-- top navigation -->
+            <div class="top_nav">
+               <div class="nav_menu">
+                  <nav>
+                  </nav>
+               </div>
             </div>
-        </div>
-        <!-- /#page-content-wrapper -->
-
-    </div>
-
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-
-    <script src="js/common.js"></script>
-    <script src="js/index.js"></script>
-</body>
-
+            <!-- /top navigation -->
+            <!-- Page Content -->
+            <div class="right_col" role="main">
+               <!-- top tiles -->
+               <div class="row tile_count">
+                  <div class="container-fluid">
+                     <div class="row tile_count">
+                        <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+                           <span class="count_top"><i class="fa fa-user"></i> Total joueurs</span>
+                           <div class="count" id="totPlayer">0</div>
+                           <span class="count_bottom">Matchs : <i class="green" id="matchCount">0 </i></span>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+                           <span class="count_top"><i class="fas fa-kiwi-bird"></i> S2 joué</span>
+                           <div class="count" id="s2Count">0</div>
+                           <span class="count_bottom">Total : <i class="green" id="s2Tot">0 </i></span>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+                           <span class="count_top"><i class="fas fa-kiwi-bird"></i> S3 joué</span>
+                           <div class="count green" id="s3Count">0</div>
+                           <span class="count_bottom">Total : <i class="green" id="s3Tot">0 </i></span>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+                           <span class="count_top"><i class="fas fa-kiwi-bird"></i> S4 joué</span>
+                           <div class="count" id="s4Count">0</div>
+                           <span class="count_bottom">Total : <i class="red" id="s4Tot">0 </i></span>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+                           <span class="count_top"><i class="fas fa-kiwi-bird"></i> S5 joué</span>
+                           <div class="count" id="s5Count">0s</div>
+                           <span class="count_bottom">Total : <i class="green" id="s5Tot">0 </i></span>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+                           <span class="count_top"><i class="fas fa-kiwi-bird"></i> Figurines jouées</span>
+                           <div class="count" id="charCount"></div>
+                           <span class="count_bottom">Total : <i class="green" id="charTot">0 </i></span>
+                        </div>
+                     </div>
+                     <!-- /top tiles -->
+                     <!-- Chart -->
+                     <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                           <div class="dashboard_graph">
+                              <div class="row x_title">
+                                 <div class="col-md-6">
+                                    <h3>Classement <small>Du meilleur au plus mauvais</small></h3>
+                                 </div>
+                              </div>
+                              <div class="col-md-6 col-sm-6 col-xs-12">
+                                 <!-- Building ranking table -->
+                                 <table id="playersTable" class="table table-hover">
+                                    <thead>
+                                       <tr>
+                                          <th>#</th>
+                                          <th>Nom de joueur</th>
+                                          <th>Equipe</th>
+                                          <th>Points</th>
+                                       </tr>
+                                    </thead>
+                                    <tbody id="playersTableTBody">
+                                       <!-- Dynamicly filled -->
+                                    </tbody>
+                                 </table>
+                              </div>
+                              <div class="col-md-6 col-sm-6 col-xs-12">
+                                 <!-- Building tournament table -->
+                                 <table id="tournamentGeneration" class="table table-hover">
+                                    <thead>
+                                       <tr>
+                                          <th>Table</th>
+                                          <th>Map</th>
+                                          <th>J1</th>
+                                          <th>J2</th>
+                                       </tr>
+                                    </thead>
+                                    <tbody id="tournamentGenerationTBody">
+                                       <!-- Dynamicly filled -->
+                                    </tbody>
+                                 </table>
+                              </div>
+                              <div class="clearfix"></div>
+                           </div>
+                        </div>
+                     </div>
+                     <br />
+                     <!-- /Chart -->
+                     <!-- Chart js -->
+                     <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                           <div class="dashboard_graph">
+                              <div class="row x_title">
+                                 <div class="col-md-6">
+                                    <h3>Team overview <small></small></h3>
+                                 </div>
+                              </div>
+                              <div class="col-md-9 col-sm-9 col-xs-12">
+                                 <canvas id="canvas"></canvas>
+                              </div>
+                              <div class="clearfix"></div>
+                           </div>
+                        </div>
+                     </div>
+                     <br />
+                     <!-- /Chart js -->
+                  </div>
+               </div>
+               <!-- /row tile_count -->
+            </div>
+            <!-- /right_col -->
+            <!-- Navbar -->
+            <div w3-include-html="shared/footer.html"></div>
+            <!-- /#page-content-wrapper -->
+         </div>
+      </div>
+      <!-- jQuery library -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <!-- Popper JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+      <!-- Latest compiled JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+      <!--<script src="js/helpers/smartresize.js"></script>-->
+      <script src="js/helpers/common.js"></script>
+      <script src="js/chart/chart.min.js"></script>
+      <script src="js/index.js"></script>
+      <script src="js/ranking.js"></script>
+      <script src="js/generator.js"></script>
+      <script src="js/chart/customCharts.js"></script>
+   </body>
 </html>
