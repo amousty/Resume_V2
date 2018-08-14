@@ -150,3 +150,22 @@ function includeHTML() {
     }
   }
 };
+
+function getOwnerTeam(teamID){
+  for(var i = 0; i < players.length; i++){
+    if(parseInt(players[i].team) === teamID){
+      return players[i];
+      break;
+    }
+  }
+  return teams[teamID-1];
+}
+
+function getIdTeamByPlayer(playerID){
+  for(var i = 0; i < teams.length; i++){
+    if(parseInt(teams[i].id) === playerID){
+      return (teams[i].id -1);
+      break;
+    }
+  }
+}

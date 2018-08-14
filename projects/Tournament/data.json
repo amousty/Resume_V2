@@ -17,66 +17,66 @@
 	],
 	"teams" : [
 		{"id" : 1, "name" : "Milimochon", "colour" : "#3C6E71", "composition" : [
-			{"id" : 1},
-			{"id" : 2},
-			{"id" : 3},
-			{"id" : 4}
+			{"id" : 1, "abbr" : ""},
+			{"id" : 2, "abbr" : ""},
+			{"id" : 3, "abbr" : ""},
+			{"id" : 4, "abbr" : ""}
 			]
 		},
 		{"id" : 2, "name" : "Katin", "colour" : "#32234C", "composition" : [
-			{"id" : 5},
-			{"id" : 6},
-			{"id" : 7},
-			{"id" : 8}
+			{"id" : 5, "abbr" : ""},
+			{"id" : 6, "abbr" : ""},
+			{"id" : 7, "abbr" : ""},
+			{"id" : 8, "abbr" : ""}
 			]
 		},
 		{"id" : 3, "name" : "Obalmaské", "colour" : "#E15554", "composition" : [
-			{"id" : 9},
-			{"id" : 10},
-			{"id" : 11},
-			{"id" : 12},
-			{"id" : 13}
+			{"id" : 9, "abbr" : ""},
+			{"id" : 10, "abbr" : ""},
+			{"id" : 11, "abbr" : ""},
+			{"id" : 12, "abbr" : ""},
+			{"id" : 13, "abbr" : ""}
 			]
 		},
 		{"id" : 4, "name" : "Corbowl", "colour" : "#3BB273", "composition" : [
-			{"id" : 14},
-			{"id" : 15},
-			{"id" : 16},
-			{"id" : 17},
-			{"id" : 18}
+			{"id" : 14, "abbr" : ""},
+			{"id" : 15, "abbr" : ""},
+			{"id" : 16, "abbr" : ""},
+			{"id" : 17, "abbr" : ""},
+			{"id" : 18, "abbr" : ""}
 			]
 		},
 		{"id" : 5, "name" : "Francule", "colour" : "#D84727", "composition" : [
-			{"id" : 19},
-			{"id" : 20},
-			{"id" : 21},
-			{"id" : 22},
-			{"id" : 23},
-			{"id" : 24}
+			{"id" : 19, "abbr" : ""},
+			{"id" : 20, "abbr" : ""},
+			{"id" : 21, "abbr" : ""},
+			{"id" : 22, "abbr" : ""},
+			{"id" : 23, "abbr" : ""},
+			{"id" : 24, "abbr" : ""}
 			]
 		},
 		{"id" : 6, "name" : "Khan karspam", "colour" : "#14699B", "composition" : [
-			{"id" : 25},
-			{"id" : 2},
-			{"id" : 26},
-			{"id" : 27},
-			{"id" : 28},
-			{"id" : 29},
-			{"id" : 30}
+			{"id" : 25, "abbr" : ""},
+			{"id" : 2, "abbr" : ""},
+			{"id" : 26, "abbr" : ""},
+			{"id" : 27, "abbr" : ""},
+			{"id" : 28, "abbr" : ""},
+			{"id" : 29, "abbr" : ""},
+			{"id" : 30, "abbr" : ""}
 			]
 		},
 		{"id" : 7, "name" : "Shpincter back", "colour" : "#987F69", "composition" : [
-			{"id" : 31},
-			{"id" : 32},
-			{"id" : 33},
-			{"id" : 34},
-			{"id" : 35}
+			{"id" : 31, "abbr" : ""},
+			{"id" : 32, "abbr" : ""},
+			{"id" : 33, "abbr" : ""},
+			{"id" : 34, "abbr" : ""},
+			{"id" : 35, "abbr" : ""}
 			]
 		},
 		{"id" : 8, "name" : "Goulag", "colour" : "#DE9DA7", "composition" : [
-			{"id" : 14},
-			{"id" : 36},
-			{"id" : 37}
+			{"id" : 14, "abbr" : ""},
+			{"id" : 36, "abbr" : ""},
+			{"id" : 37, "abbr" : ""}
 			]
 		}
 	],
@@ -133,16 +133,16 @@
 			{"id" : 50, "season" : 2, "name" : "Bonta Riktus"				, "init" : 3, "level" : 2, "hp" : 5, "pa" : 6, "pm" : 3, "type" : "normal"},
 			{"id" : 51, "season" : 2, "name" : "Cléophée"				    , "init" : 7, "level" : 2, "hp" : 7, "pa" : 6, "pm" : 3, "type" : "normal"},
 			{"id" : 52, "season" : 5, "name" : "Mulou"				        , "init" : 3, "level" : 2, "hp" : 7, "pa" : 7, "pm" : 3, "type" : "normal"},
-			{"id" : 53, "season" : 0, "name" : "Marline"			     	, "init" : 4, "level" : 2, "hp" : 6, "pa" : 6, "pm" : 3, "type" : "normal"},
+			{"id" : 53, "season" : 3, "name" : "Marline"			     	, "init" : 4, "level" : 2, "hp" : 6, "pa" : 6, "pm" : 3, "type" : "normal"},
 			{"id" : 54, "season" : 2, "name" : "Igar Dlador"				, "init" : 4, "level" : 2, "hp" : 7, "pa" : 6, "pm" : 3, "type" : "normal"},
 			{"id" : 55, "season" : 3, "name" : "Chafer Archer"				, "init" : 3, "level" : 2, "hp" : 5, "pa" : 6, "pm" : 3, "type" : "normal"},
 			{"id" : 56, "season" : 2, "name" : "Ayan"			        	, "init" : 5, "level" : 2, "hp" : 6, "pa" : 6, "pm" : 3, "type" : "normal"},
 			{"id" : 57, "season" : 3, "name" : "Dragoeth Le Penseur"		, "init" : 5, "level" : 2, "hp" : 6, "pa" : 6, "pm" : 3, "type" : "normal"},
-			{"id" : 58, "season" : 0, "name" : "Roi Citron"			     	, "init" : 5, "level" : 2, "hp" : 6, "pa" : 6, "pm" : 3, "type" : "normal"},
+			{"id" : 58, "season" : 5, "name" : "Roi Citron"			     	, "init" : 5, "level" : 2, "hp" : 6, "pa" : 6, "pm" : 3, "type" : "normal"},
 			{"id" : 59, "season" : 2, "name" : "Ira Tayte"				    , "init" : 0, "level" : 2, "hp" : 5, "pa" : 6, "pm" : 3, "type" : "normal"},
 			{"id" : 60, "season" : 4, "name" : "Maitre Vampire"			    , "init" : 7, "level" : 3, "hp" : 10, "pa" : 7, "pm" : 3, "type" : "normal"},
-			{"id" : 61, "season" : 0, "name" : "Kréol Panikon"				, "init" : 4, "level" : 3, "hp" : 9, "pa" : 6, "pm" : 3, "type" : "normal"},
-			{"id" : 62, "season" : 0, "name" : "Tofu Royal"				    , "init" : 7, "level" : 3, "hp" : 8, "pa" : 6, "pm" : 4, "type" : "normal"},
+			{"id" : 61, "season" : 1, "name" : "Kréol Panikon"				, "init" : 4, "level" : 3, "hp" : 9, "pa" : 6, "pm" : 3, "type" : "normal"},
+			{"id" : 62, "season" : 3, "name" : "Tofu Royal"				    , "init" : 7, "level" : 3, "hp" : 8, "pa" : 6, "pm" : 4, "type" : "normal"},
 			{"id" : 63, "season" : 3, "name" : "Deminoboule"			    , "init" : 7, "level" : 3, "hp" : 13, "pa" : 6, "pm" : 1, "type" : "normal"},
 			{"id" : 64, "season" : 3, "name" : "Kanniboul Ebil"				, "init" : 7, "level" : 3, "hp" : 11, "pa" : 6, "pm" : 3, "type" : "normal"},
 			{"id" : 65, "season" : 2, "name" : "Katsu Mi"				    , "init" : 2, "level" : 3, "hp" : 10, "pa" : 6, "pm" : 3, "type" : "normal"},
@@ -155,22 +155,22 @@
 			{"id" : 72, "season" : 0, "name" : "Papycha - Marchand"		    , "init" : 4, "level" : 3, "hp" : 10, "pa" : 4, "pm" : 3, "type" : "normal"},
 			{"id" : 73, "season" : 0, "name" : "Joris - Maitre"		        , "init" : 9, "level" : 3, "hp" : 10, "pa" : 9, "pm" : 3, "type" : "normal"},
 			{"id" : 74, "season" : 2, "name" : "Diver Birel"      		    , "init" : 6, "level" : 3, "hp" : 10, "pa" : 6, "pm" : 3, "type" : "normal"},
-			{"id" : 75, "season" : 0, "name" : "Choppy Sue"		            , "init" : 1, "level" : 3, "hp" : 10, "pa" : 6, "pm" : 3, "type" : "normal"},
+			{"id" : 75, "season" : 2, "name" : "Choppy Sue"		            , "init" : 1, "level" : 3, "hp" : 10, "pa" : 6, "pm" : 3, "type" : "normal"},
 			{"id" : 76, "season" : 2, "name" : "Adamai"		                , "init" : 7, "level" : 3, "hp" : 8, "pa" : 6, "pm" : 3, "type" : "normal"},
 			{"id" : 77, "season" : 2, "name" : "Adamai - Dragon"		    , "init" : 7, "level" : 3, "hp" : 10, "pa" : 6, "pm" : 3, "type" : "normal"},
 			{"id" : 78, "season" : 2, "name" : "Pandalida"		            , "init" : 5, "level" : 3, "hp" : 11, "pa" : 6, "pm" : 3, "type" : "normal"},
-			{"id" : 79, "season" : 0, "name" : "Chafer Invisible"		    , "init" : 3, "level" : 3, "hp" : 13, "pa" : 7, "pm" : 3, "type" : "normal"},
-			{"id" : 95, "season" : 0, "name" : "Roi Fraise"		            , "init" : 5, "level" : 4, "hp" : 13, "pa" : 7, "pm" : 3, "type" : "normal"},
-			{"id" : 80, "season" : 0, "name" : "Dragueuse"		            , "init" : 5, "level" : 4, "hp" : 11, "pa" : 6, "pm" : 4, "type" : "normal"},
+			{"id" : 79, "season" : 4, "name" : "Chafer Invisible"		    , "init" : 3, "level" : 3, "hp" : 13, "pa" : 7, "pm" : 3, "type" : "normal"},
+			{"id" : 95, "season" : 5, "name" : "Roi Fraise"		            , "init" : 5, "level" : 4, "hp" : 13, "pa" : 7, "pm" : 3, "type" : "normal"},
+			{"id" : 80, "season" : 3, "name" : "Dragueuse"		            , "init" : 5, "level" : 4, "hp" : 11, "pa" : 6, "pm" : 4, "type" : "normal"},
 			{"id" : 81, "season" : 3, "name" : "Minotoror"		            , "init" : 7, "level" : 4, "hp" : 14, "pa" : 6, "pm" : 2, "type" : "normal"},
-			{"id" : 82, "season" : 0, "name" : "Jahash"	            	    , "init" : 1, "level" : 4, "hp" : 12, "pa" : 7, "pm" : 3, "type" : "normal"},
-			{"id" : 83, "season" : 0, "name" : "Grampy"		                , "init" : 4, "level" : 4, "hp" : 11, "pa" : 6, "pm" : 2, "type" : "normal"},
-			{"id" : 84, "season" : 0, "name" : "Chafer D'élite"		        , "init" : 3, "level" : 4, "hp" : 11, "pa" : 6, "pm" : 3, "type" : "normal"},
+			{"id" : 82, "season" : 3, "name" : "Jahash"	            	    , "init" : 1, "level" : 4, "hp" : 12, "pa" : 7, "pm" : 3, "type" : "normal"},
+			{"id" : 83, "season" : 3, "name" : "Grampy"		                , "init" : 4, "level" : 4, "hp" : 11, "pa" : 6, "pm" : 2, "type" : "normal"},
+			{"id" : 84, "season" : 4, "name" : "Chafer D'élite"		        , "init" : 3, "level" : 4, "hp" : 11, "pa" : 6, "pm" : 3, "type" : "normal"},
 			{"id" : 85, "season" : 0, "name" : "Chigno Elite"		        , "init" : 6, "level" : 4, "hp" : 12, "pa" : 8, "pm" : 3, "type" : "normal"},
 			{"id" : 86, "season" : 2, "name" : "Emma Sacre"		            , "init" : 0, "level" : 4, "hp" : 12, "pa" : 6, "pm" : 4, "type" : "normal"},
-			{"id" : 87, "season" : 0, "name" : "Bworker"	        	    , "init" : 6, "level" : 4, "hp" : 12, "pa" : 8, "pm" : 4, "type" : "normal"},
-			{"id" : 88, "season" : 0, "name" : "Roi Nidas"		            , "init" : 7, "level" : 4, "hp" : 12, "pa" : 6, "pm" : 4, "type" : "normal"},
-			{"id" : 89, "season" : 0, "name" : "Remington Smisse"           , "init" : 7, "level" : 4, "hp" : 12, "pa" : 7, "pm" : 3, "type" : "normal"},
+			{"id" : 87, "season" : 5, "name" : "Bworker"	        	    , "init" : 6, "level" : 4, "hp" : 12, "pa" : 8, "pm" : 4, "type" : "normal"},
+			{"id" : 88, "season" : 2, "name" : "Roi Nidas"		            , "init" : 7, "level" : 4, "hp" : 12, "pa" : 6, "pm" : 4, "type" : "normal"},
+			{"id" : 89, "season" : 3, "name" : "Remington Smisse"           , "init" : 7, "level" : 4, "hp" : 12, "pa" : 7, "pm" : 3, "type" : "normal"},
 			{"id" : 90, "season" : 2, "name" : "Papycha - Protecteur"	    , "init" : 6, "level" : 4, "hp" : 12, "pa" : 7, "pm" : 3, "type" : "normal"},
 			{"id" : 91, "season" : 0, "name" : "Kerub Crepin"		        , "init" : 9, "level" : 4, "hp" : 13, "pa" : 7, "pm" : 4, "type" : "normal"},
 			{"id" : 92, "season" : 0, "name" : "Yugo - Exalté"		        , "init" : 7, "level" : 4, "hp" : 12, "pa" : 7, "pm" : 4, "type" : "normal"},
@@ -180,7 +180,7 @@
 			{"id" : 97, "season" : 3, "name" : "Moon"		                , "init" : 1, "level" : 5, "hp" : 12, "pa" : 7, "pm" : 4, "type" : "normal"},
 			{"id" : 98, "season" : 2, "name" : "Doo Rex"		            , "init" : 7, "level" : 5, "hp" : 12, "pa" : 7, "pm" : 4, "type" : "normal"},
 			{"id" : 99, "season" : 2, "name" : "Mali Bouh"		            , "init" : 5, "level" : 5, "hp" : 13, "pa" : 7, "pm" : 4, "type" : "normal"},
-			{"id" : 100, "season" : 0, "name" : "La Nonne"		            , "init" : 8, "level" : 5, "hp" : 14, "pa" : 8, "pm" : 2, "type" : "normal"},
+			{"id" : 100, "season" : 4, "name" : "La Nonne"		            , "init" : 8, "level" : 5, "hp" : 14, "pa" : 8, "pm" : 2, "type" : "normal"},
 			{"id" : 101, "season" : 0, "name" : "Qilby - Traitre"		    , "init" : 6, "level" : 6, "hp" : 14, "pa" : 10, "pm" : 3, "type" : "normal"},
 			{"id" : 102, "season" : 0, "name" : "Qilby"		                , "init" : 6, "level" : 6, "hp" : 16, "pa" : 10, "pm" : 2, "type" : "normal"},
 			{"id" : 103, "season" : 3, "name" : "Otomai"		            , "init" : 0, "level" : 6, "hp" : 12, "pa" : 4, "pm" : 4, "type" : "normal"},
@@ -188,9 +188,9 @@
 			{"id" : 105, "season" : 5, "name" : "Simon Gin"		            , "init" : 4, "level" : 1, "hp" : 6, "pa" : 5, "pm" : 3, "type" : "normal"},
 			{"id" : 106, "season" : 2, "name" : "Steamy Wonder"		        , "init" : 0, "level" : 1, "hp" : 6, "pa" : 5, "pm" : 3, "type" : "normal"},
 			{"id" : 107, "season" : 3, "name" : "Kanniboul Jav"		        , "init" : 6, "level" : 2, "hp" : 6, "pa" : 6, "pm" : 3, "type" : "normal"},
-			{"id" : 108, "season" : 0, "name" : "Dark Vlad"		            , "init" : 7, "level" : 2, "hp" : 10, "pa" : 6, "pm" : 3, "type" : "normal"},
+			{"id" : 108, "season" : 3, "name" : "Dark Vlad"		            , "init" : 7, "level" : 2, "hp" : 10, "pa" : 6, "pm" : 3, "type" : "normal"},
 			{"id" : 109, "season" : 3, "name" : "Nakunbra"		            , "init" : 2, "level" : 2, "hp" : 6, "pa" : 6, "pm" : 3, "type" : "normal"},
-			{"id" : 110, "season" : 0, "name" : "Missiz Frizz"		        , "init" : 4, "level" : 2, "hp" : 7, "pa" : 6, "pm" : 3, "type" : "normal"},
+			{"id" : 110, "season" : 5, "name" : "Missiz Frizz"		        , "init" : 4, "level" : 2, "hp" : 7, "pa" : 6, "pm" : 3, "type" : "normal"},
 			{"id" : 111, "season" : 5, "name" : "Fabine Berthaz"		    , "init" : 7, "level" : 2, "hp" : 6, "pa" : 6, "pm" : 3, "type" : "normal"},
 			{"id" : 112, "season" : 5, "name" : "Jason Hic"                 , "init" : 4, "level" : 2, "hp" : 8, "pa" : 6, "pm" : 3, "type" : "normal"},
 			{"id" : 113, "season" : 2, "name" : "Bouftou Royal"		        , "init" : 1, "level" : 3, "hp" : 10, "pa" : 7, "pm" : 3, "type" : "normal"},
@@ -203,13 +203,13 @@
 			{"id" : 120, "season" : 3, "name" : "Corbeau Noir"		        , "init" : 4, "level" : 4, "hp" : 10, "pa" : 7, "pm" : 4, "type" : "normal"},
 			{"id" : 121, "season" : 2, "name" : "Anne Gupp"		            , "init" : 4, "level" : 4, "hp" : 13, "pa" : 7, "pm" : 3, "type" : "normal"},
 			{"id" : 122, "season" : 3, "name" : "Ben Le Ripate"		        , "init" : 9, "level" : 4, "hp" : 10, "pa" : 7, "pm" : 3, "type" : "normal"},
-			{"id" : 123, "season" : 0, "name" : "Reine Des Voleurs"		    , "init" : 8, "level" : 4, "hp" : 14, "pa" : 7, "pm" : 3, "type" : "normal"},
+			{"id" : 123, "season" : 2, "name" : "Reine Des Voleurs"		    , "init" : 8, "level" : 4, "hp" : 14, "pa" : 7, "pm" : 3, "type" : "normal"},
 			{"id" : 124, "season" : 3, "name" : "Ush"		                , "init" : 6, "level" : 4, "hp" : 12, "pa" : 7, "pm" : 3, "type" : "normal"},
 			{"id" : 125, "season" : 4, "name" : "Gros Nambourg"		        , "init" : 5, "level" : 4, "hp" : 12, "pa" : 7, "pm" : 3, "type" : "normal"},
-			{"id" : 126, "season" : 0, "name" : "Roissingue"		        , "init" : 8, "level" : 4, "hp" : 13, "pa" : 7, "pm" : 3, "type" : "normal"},
+			{"id" : 126, "season" : 4, "name" : "Roissingue"		        , "init" : 8, "level" : 4, "hp" : 13, "pa" : 7, "pm" : 3, "type" : "normal"},
 			{"id" : 127, "season" : 5, "name" : "Amalius"		            , "init" : 10, "level" : 5, "hp" : 14, "pa" : 6, "pm" : 4, "type" : "normal"},
-			{"id" : 128, "season" : 0, "name" : "Meulou"		            , "init" : 8, "level" : 5, "hp" : 15, "pa" : 7, "pm" : 4, "type" : "normal"},
-			{"id" : 130, "season" : 0, "name" : "Guerrier Bwork"		    , "init" : 2, "level" : 2, "hp" : 6, "pa" : 6, "pm" : 3, "type" : "normal"},
+			{"id" : 128, "season" : 5, "name" : "Meulou"		            , "init" : 8, "level" : 5, "hp" : 15, "pa" : 7, "pm" : 4, "type" : "normal"},
+			{"id" : 130, "season" : 5, "name" : "Guerrier Bwork"		    , "init" : 2, "level" : 2, "hp" : 6, "pa" : 6, "pm" : 3, "type" : "normal"},
 			{"id" : 131, "season" : 3, "name" : "Maskemane - Classic"   	, "init" : 1, "level" : 1, "hp" : 5, "pa" : 6, "pm" : 3, "type" : "normal"},
 			{"id" : 132, "season" : 3, "name" : "Maskemane - Psychopathe"	, "init" : 1, "level" : 1, "hp" : 7, "pa" : 5, "pm" : 3, "type" : "normal"},
 			{"id" : 129, "season" : 3, "name" : "Le Chouque"		        , "init" : 4, "level" : 5, "hp" : 12, "pa" : 8, "pm" : 4, "type" : "normal"}

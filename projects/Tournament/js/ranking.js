@@ -22,9 +22,9 @@ function buildPlayersTable(){
         var name = players[i]["name"];
         var teamNumber = players[i].team !== "" ? players[i].team : pickAValue(teams, "T", true);
 				var points 	= players[i]["points"];
-				var tooltipTeam = buildTooltipTeam(teamNumber, teams, characters); // Get team text
+				var tooltipTeam = buildTooltipTeam(teamNumber); // Get team text
 				//var tr = $('<tr data-toggle="tooltip" data-placement="right" title="' + tooltipTeam +'">');
-				var tr = $('<tr data-toggle="collapse" data-target="#team_' + (i + 1) + '" class="clickable">');
+				var tr = $('<tr data-toggle="collapse" data-target="#team_' + (i + 1) + '" class="clickable" onclick="buildDoughnutDataSet(' + players[i].team + ')">');
 
 				switch (i){
 					case 0:
@@ -56,22 +56,23 @@ function buildTooltipTeam(tn){
 	var idCharcterList = teams[tn-1].composition;
 	teamName += "<ul class='list-group list-group-flush'>";
 	for(var i = 0; i < idCharcterList.length; i++){
+		var correctedCharacterIndex = idCharcterList[i].id -1;
 		teamName +=
-			"<li class='list-group-item " + characters[idCharcterList[i].id].type + "'>" +
+			"<li class='list-group-item " + characters[correctedCharacterIndex].type + "'>" +
 
 			"<span class='badge badge-primary badge-pill'>" +
-			"<i class='fas fa-bolt'></i> " +  characters[idCharcterList[i].id].init +
+			"<i class='fas fa-bolt'></i> " +  characters[correctedCharacterIndex].init +
 			"</span>" + " " +
 
 			"<span class='badge badge-secondary badge-pill'>" +
-			"<i class='fas fa-sort-numeric-up'></i> " + 	characters[idCharcterList[i].id].level +
+			"<i class='fas fa-sort-numeric-up'></i> " + 	characters[correctedCharacterIndex].level +
 			"</span>" + " " +
 
 			"<span class='badge badge-danger badge-pill'>" +
-			"<i class='fas fa-heart' ></i> " + 	characters[idCharcterList[i].id].hp +
+			"<i class='fas fa-heart' ></i> " + 	characters[correctedCharacterIndex].hp +
 			"</span>" + " " +
 
-			characters[idCharcterList[i].id].name +
+			characters[correctedCharacterIndex].name +
 			"</li>";
 	}
 	teamName += "</ul>";
